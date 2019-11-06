@@ -10,11 +10,9 @@ int partition(uint32_t a[], int32_t low, int32_t high) {
   do {
     do {
       i += 1;
-      compares += 1;
     } while (a[i] < pivotValue);
     do {
       j -= 1;
-      compares += 1;
     } while (a[j] > pivotValue);
     if (i < j) {
       SWAP(a[i], a[j]);
